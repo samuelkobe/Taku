@@ -212,6 +212,12 @@ gulp.task('fonts', function() {
     .pipe(browserSync.stream());
 });
 
+// Fonts
+gulp.task('fa-fonts', function() {
+    return gulp.src(['bower_components/font-awesome/fonts/fontawesome-webfont.*'])
+            .pipe(gulp.dest('dist/fonts/'));
+});
+
 // ### Images
 // `gulp images` - Run lossless compression on all the images.
 gulp.task('images', function() {
@@ -269,7 +275,7 @@ gulp.task('watch', function() {
 gulp.task('build', function(callback) {
   runSequence('styles',
               'scripts',
-              ['fonts', 'images'],
+              ['fonts', 'images', 'fa-fonts'],
               callback);
 });
 
