@@ -49,9 +49,16 @@ footer div.container section.widget {
 }
 
 footer div.container section.widget.acf_widget_114-3.acf_widget_114.Acf_Widget_114 {
-		width: 206px;
+	a {
+		max-width: 50%;
+	}
 	img {
-		max-width: 40%;
+		max-width: 100%;
+		opacity: .7;
+		&:hover {
+			opacity: .9;
+			cursor: pointer; 
+		}
 	}
 }
 
@@ -65,12 +72,11 @@ footer div.container section.widget.nav_menu-2.widget_nav_menu {
 		align-items: center;
 		-webkit-justify-content: center;
 		justify-content: center;
+		margin-bottom: 0;
 	}
 	li {
-		flex: 1 0 20%;
+		flex: 1 0 25%;
 		padding: 10px;
-		margin-left: 10px;
-		margin-top: 10px;
 
 		list-style-type: none;
 		text-transform: lowercase;
@@ -81,7 +87,7 @@ footer div.container section.widget.acf_widget_147-2.acf_widget_147.Acf_Widget_1
 	-webkit-flex-direction: row; /* works with row or column */
    	flex-direction: row;
    	i {
-   		font-size: 48px;
+   		font-size: 42px;
    		padding: 16px;
    	}
 }

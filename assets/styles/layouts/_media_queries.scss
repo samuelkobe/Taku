@@ -9,20 +9,42 @@
 	.experience_portal {
 		width: 50%;
 		max-height: 600px;
+		h2 {
+			font-size: 42px;
+		}
 	}
-
+	footer div.container {
+		height: 200px
+	}
+	footer div.container section.widget.acf_widget_114-3.acf_widget_114.Acf_Widget_114 {
+		a {
+			max-width: 55%;
+		}
+	}
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
 	.experience_portal {
 		width: 100%;
 		max-height: 600px;
+		h2 {
+			font-size: 30px;
+		}
 	}
 	footer div.container {
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
 		-webkit-flex-direction: column; /* works with row or column */
 		flex-direction: column;
+		height: 500px
+	}
+	footer div.container section.widget {
+		flex: auto;
+	}
+	footer div.container section.widget.acf_widget_114-3.acf_widget_114.Acf_Widget_114 {
+		a {
+			max-width: 40%;
+		}
 	}
 }
 
@@ -30,12 +52,24 @@
 	.experience_portal {
 		width: 100%;
 		max-height: 400px;
+		h2 {
+			font-size: 30px;
+		}
 	}
 	footer div.container {
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
 		-webkit-flex-direction: column; /* works with row or column */
 		flex-direction: column;
+		height: 500px;
+	}
+	footer div.container section.widget {
+		flex: auto;
+	}
+	footer div.container section.widget.acf_widget_114-3.acf_widget_114.Acf_Widget_114 {
+		a {
+			max-width: 40%;
+		}
 	}
 }
 
@@ -43,12 +77,48 @@
 	.experience_portal {
 		width: 100%;
 		max-height: 400px;
+		h2 {
+			font-size: 30px;
+		}
 	}
+	.experience_description {
+		width: 100%;
+		padding: 2%;
+	}
+	a.experience_link:hover .experience_description {
+		-webkit-transform: translate3d(0,-175%,0);
+	    transform: translate3d(0,-175%,0);
+	} 
+
 	footer div.container {
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
 		-webkit-flex-direction: column; /* works with row or column */
 		flex-direction: column;
+		height: 500px;
+	}
+
+	footer div.container section.widget {
+		flex: auto;
+	}
+	footer div.container section.widget.acf_widget_114-3.acf_widget_114.Acf_Widget_114 {
+		a {
+			max-width: 40%;
+		}
+	}
+	footer div.container section.widget.nav_menu-2.widget_nav_menu {
+		ul {
+			margin-left: 15%;
+		}
+		li {
+			flex: 1 0 50%;
+		}
+	}
+	footer div.container section.widget.acf_widget_147-2.acf_widget_147.Acf_Widget_147 {
+	   	i {
+	   		font-size: 36px;
+	   		padding: 12px;
+	   	}
 	}
 }
 
