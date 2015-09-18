@@ -9,6 +9,7 @@
   "dependencies": {
     "bootstrap-sass-official": "3.3.5",
     "flexslider": "~2.5.0",
+    "font-awesome": "fontawesome#~4.4.0",
     "modernizr": "2.8.2"
   },
   "overrides": {

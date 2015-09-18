@@ -4,13 +4,17 @@
 header  {
 	font-family: "Brandon Grotesque";
 	font-size: 18px;
+	// position: fixed;
+	// top: 0;
+	// left: 0;
 }
 
 // BOOTSTRAP NAVBAR
+#menu-primary-navigation {
+	background-color: #fff;
+}
+
 .nav-wrap {
-	position: fixed;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: 79px;
 	background-color: #fff;

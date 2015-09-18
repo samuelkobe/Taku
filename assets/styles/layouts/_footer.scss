@@ -1,0 +1,87 @@
+footer {
+	overflow: hidden;
+	* > {
+		box-sizing: border-box;
+	}
+}
+footer div.container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-flex-direction: row; /* works with row or column */
+   	flex-direction: row;
+  	-webkit-align-items: center;
+  	align-items: center;
+  	-webkit-justify-content: center;
+   	justify-content: center;
+	height: 300px;
+	width: 100%;
+}
+
+footer div.container section.widget {
+	flex: 1;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-flex-direction: column; /* works with row or column */
+   	flex-direction: column;
+  	-webkit-align-items: center;
+  	align-items: center;
+  	-webkit-justify-content: center;
+   	justify-content: center;
+	overflow: hidden;
+	a:link {
+		color: #777;
+		text-decoration: underline;
+		&:hover {
+			color: #333;
+			text-decoration: none;
+		}
+	}
+}
+
+footer div.container section.widget.acf_widget_114-3.acf_widget_114.Acf_Widget_114 {
+		width: 206px;
+	img {
+		max-width: 40%;
+	}
+}
+
+footer div.container section.widget.nav_menu-2.widget_nav_menu {
+	flex: 2;
+	ul {
+		margin-left: 7.5%;
+		display: flex;
+		flex-wrap: wrap;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+	}
+	li {
+		flex: 1 0 20%;
+		padding: 10px;
+		margin-left: 10px;
+		margin-top: 10px;
+
+		list-style-type: none;
+		text-transform: lowercase;
+	}
+}
+
+footer div.container section.widget.acf_widget_147-2.acf_widget_147.Acf_Widget_147 {
+	-webkit-flex-direction: row; /* works with row or column */
+   	flex-direction: row;
+   	i {
+   		font-size: 48px;
+   		padding: 16px;
+   	}
+}

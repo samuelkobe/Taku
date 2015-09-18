@@ -42,11 +42,10 @@
 
 			<div id="adventure" class="experience_portal">
 				<a class="experience_link" href="<?php the_field('adventure_link'); ?>">
-	
-				<div class="inner_experience_wrap">
-					<h2 class="experience_title"><?php the_field('adventure_title'); ?></h2>
+				
+				<h2 class="experience_title"><span><?php the_field('adventure_title'); ?></span></h2>	
+				<div class="inner_experience_wrap" style="background-image: url(<?php the_field('adventure_image'); ?>)">
 					<p class="experience_description"><?php the_field('adventure_description'); ?></p>
-					<img src="<?php the_field('adventure_image'); ?>" class="experience_image" alt="" />
 				</div>
 
 				</a>
@@ -54,11 +53,10 @@
 
 			<div id="connect" class="experience_portal">
 				<a class="experience_link" href="<?php the_field('connect_link'); ?>">
-	
-				<div class="inner_experience_wrap">
-					<h2 class="experience_title"><?php the_field('connect_title'); ?></h2>
+				
+				<h2 class="experience_title"><span><?php the_field('connect_title'); ?></span></h2>
+				<div class="inner_experience_wrap" style="background-image: url(<?php the_field('connect_image'); ?>)">	
 					<p class="experience_description"><?php the_field('connect_description'); ?></p>
-					<img src="<?php the_field('connect_image'); ?>" class="experience_image" alt="" />
 				</div>
 
 				</a>
@@ -67,10 +65,9 @@
 			<div id="discover" class="experience_portal">
 				<a class="experience_link" href="<?php the_field('discover_link'); ?>">
 	
-				<div class="inner_experience_wrap">
-					<h2 class="experience_title"><?php the_field('discover_title'); ?></h2>
+				<h2 class="experience_title"><span><?php the_field('discover_title'); ?></span></h2>
+				<div class="inner_experience_wrap" style="background-image: url(<?php the_field('discover_image'); ?>)">
 					<p class="experience_description"><?php the_field('discover_description'); ?></p>
-					<img src="<?php the_field('discover_image'); ?>" class="experience_image" alt="" />
 				</div>
 
 				</a>
@@ -79,10 +76,9 @@
 			<div id="escape" class="experience_portal">
 				<a class="experience_link" href="<?php the_field('escape_link'); ?>">
 	
-				<div class="inner_experience_wrap">
-					<h2 class="experience_title"><?php the_field('escape_title'); ?></h2>
+				<h2 class="experience_title"><span><?php the_field('escape_title'); ?></span></h2>
+				<div class="inner_experience_wrap" style="background-image: url(<?php the_field('escape_image'); ?>)">
 					<p class="experience_description"><?php the_field('escape_description'); ?></p>
-					<img src="<?php the_field('escape_image'); ?>" class="experience_image" alt="" />
 				</div>
 
 				</a>
