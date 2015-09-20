@@ -7,9 +7,12 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "modernizr": "2.8.2",
+    "jquery": "~2.1.4",
     "bootstrap-sass-official": "3.3.5",
-    "font-awesome": "fontawesome#~4.4.0",
-    "modernizr": "2.8.2"
+    "bxslider-4": "dw-bxslider-4#~4.2.5",
+    "font-awesome": "fontawesome#~4.4.0"
+
   },
   "overrides": {
     "modernizr": {

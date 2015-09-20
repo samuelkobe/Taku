@@ -1,0 +1,48 @@
+// OVERRIDES
+
+//bx-slider
+.bx-wrapper {}
+
+.bx-wrapper .bx-controls-direction a {
+	top: auto;
+	bottom: 10px;
+    margin-top: 0;
+    outline: inherit;
+    width: auto;
+    height: auto;
+    max-height: 48px;
+    max-width: 48px;
+    text-indent: 0;
+}
+
+.bx-wrapper .bx-prev {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-flex-direction: row; /* works with row or column */
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+
+    left: 45%;
+    background: none;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 3px;
+    font-size: 24px;
+    text-decoration: none;
+    &:hover {
+    	color: #ececec;
+    	border: 3px solid #ececec;
+    	text-decoration: none;
+    }
+    i {
+
+    }
+}

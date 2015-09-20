@@ -1,19 +1,19 @@
 <footer class="content-info" role="contentinfo">
-
   <div class="container">
     <?php dynamic_sidebar('sidebar-footer'); ?>
   </div>
 
   <script type="text/javascript">
+    jQuery(function ($) {
+      $(document).ready(function(){
+        $('.bxslider').bxSlider({
+          mode: 'vertical',
+          controls: 'true',
+          prevText: '<i class="fa fa-long-arrow-left"></i>'
+        });
+      });
+    });
   	// used to ensure first touch on over elements activates and not.
     document.addEventListener("touchstart", function(){}, true);
-
-    // Can also be used with $(document).ready()
-  	jQuery(window).load(function() {
-  	  jQuery('.flexslider').flexslider({
-  		animation: "slide",
-  		slideshow: false
-  	  });
-  	});
   </script>
 </footer>

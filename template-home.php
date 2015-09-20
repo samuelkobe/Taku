@@ -4,34 +4,38 @@
  */
 ?>
 
-<section class="flexslider-wrap">
-  <div class="flexslider">
-	<ul class="slides">
-		
-		<?php
-		query_posts(array('posts_per_page' => 3, 'category_name' => 'Intro'));
-		if(have_posts()) : while(have_posts()) : the_post();
-		?>
-	
-		  <li class="featured-post">
-			<?php the_post_thumbnail('slider-image'); ?>
-			<div class="caption">
-				<a href="<?php the_permalink(); ?>" class="slider-title"><?php the_title();?></a>
-				<?php the_excerpt(); ?>
-				<a href="<?php the_permalink(); ?>" class="btn">Read More!</a>
-			</div>
-
-			
-		  </li>
-	  
-		<?php
-		    endwhile;
-			endif;
-			wp_reset_query();
-		?>
-	</ul>
-  </div>
-</section>
+<ul class="bxslider">
+	<li>
+		<figure class="story">
+		  <img src="<?php the_field('story_part_01_image'); ?>" alt="Taku Story Part 1"  />
+		  <figcaption><?php the_field('story_part_01_caption'); ?></figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure class="story">
+		  <img src="<?php the_field('story_part_02_image'); ?>" alt="Taku Story Part 2"  />
+		  <figcaption><?php the_field('story_part_02_caption'); ?></figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure class="story">
+		  <img src="<?php the_field('story_part_03_image'); ?>" alt="Taku Story Part 3"  />
+		  <figcaption><?php the_field('story_part_03_caption'); ?></figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure class="story">
+		  <img src="<?php the_field('story_part_04_image'); ?>" alt="Taku Story Part 4"  />
+		  <figcaption><?php the_field('story_part_04_caption'); ?></figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure class="story">
+		  <img src="<?php the_field('story_part_05_image'); ?>" alt="Taku Story Part 5"  />
+		  <figcaption><?php the_field('story_part_05_caption'); ?></figcaption>
+		</figure>
+	</li>
+</ul>
 
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/page', 'header'); ?>
