@@ -8,8 +8,10 @@
       $(document).ready(function(){
         $('.bxslider').bxSlider({
           mode: 'vertical',
-          controls: 'true',
-          prevText: '<i class="fa fa-long-arrow-left"></i>'
+          prevText: '<i class="fa fa-long-arrow-left"></i>',
+          nextText: 'Continue',
+          pager: false,
+          touchEnabled: false
         });
       });
     });

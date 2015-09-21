@@ -6,41 +6,37 @@
 
 <ul class="bxslider">
 	<li>
-		<figure class="story">
-		  <img src="<?php the_field('story_part_01_image'); ?>" alt="Taku Story Part 1"  />
-		  <figcaption><?php the_field('story_part_01_caption'); ?></figcaption>
-		</figure>
+		<div class="story wrapper" style="background-image: url(<?php the_field('story_part_01_image'); ?>)">
+		  
+		  <img src="<?php the_field('taku_brand'); ?>" id="taku-brand-logo" alt="Taku branding and logo"  />
+		  <p><?php the_field('story_part_01_caption'); ?></p>
+
+		</div>
 	</li>
 	<li>
-		<figure class="story">
-		  <img src="<?php the_field('story_part_02_image'); ?>" alt="Taku Story Part 2"  />
-		  <figcaption><?php the_field('story_part_02_caption'); ?></figcaption>
-		</figure>
+		<div class="story wrapper" style="background-image: url(<?php the_field('story_part_02_image'); ?>)">
+		  <p><?php the_field('story_part_02_caption'); ?></p>
+		</div>
 	</li>
 	<li>
-		<figure class="story">
-		  <img src="<?php the_field('story_part_03_image'); ?>" alt="Taku Story Part 3"  />
-		  <figcaption><?php the_field('story_part_03_caption'); ?></figcaption>
-		</figure>
+		<div class="story wrapper" style="background-image: url(<?php the_field('story_part_03_image'); ?>)">
+		  <p><?php the_field('story_part_03_caption'); ?></p>
+
+		</div>
 	</li>
 	<li>
-		<figure class="story">
-		  <img src="<?php the_field('story_part_04_image'); ?>" alt="Taku Story Part 4"  />
-		  <figcaption><?php the_field('story_part_04_caption'); ?></figcaption>
-		</figure>
+		<div class="story wrapper" style="background-image: url(<?php the_field('story_part_04_image'); ?>)">
+		  <p><?php the_field('story_part_04_caption'); ?></p>
+		</div>
 	</li>
 	<li>
-		<figure class="story">
-		  <img src="<?php the_field('story_part_05_image'); ?>" alt="Taku Story Part 5"  />
-		  <figcaption><?php the_field('story_part_05_caption'); ?></figcaption>
-		</figure>
+		<div class="story wrapper" style="background-image: url(<?php the_field('story_part_05_image'); ?>)">
+		  <p><?php the_field('story_part_05_caption'); ?></p>
+		</div>
 	</li>
 </ul>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
-
 	<section id="experience_portals">
 
 
@@ -88,7 +84,9 @@
 				</a>
 			</div>
 			
-
 	</section>
+
+	<!-- <?php get_template_part('templates/page', 'header'); ?> -->
+  	<!-- <?php get_template_part('templates/content', 'page'); ?> -->
  
 <?php endwhile; ?>

@@ -6,6 +6,19 @@
    480-less    - phone landscape & smaller
 --------------------------------------------*/
 @media all and (min-width: 1024px) and (max-width: 1280px) {
+	//HOME - SLIDER
+	.bx-wrapper ul li div.story.wrapper {
+
+		img#taku-brand-logo {
+
+		}
+
+		p {
+			font-size: 36px;
+		}
+	}
+
+	// HOME - EXPERIENCE PORTALS
 	.experience_portal {
 		width: 50%;
 		max-height: 600px;
@@ -13,6 +26,8 @@
 			font-size: 42px;
 		}
 	}
+
+	// FOOTER
 	footer div.container {
 		height: 200px
 	}
@@ -24,6 +39,19 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
+	//HOME - SLIDER
+	.bx-wrapper ul li div.story.wrapper {
+
+		img#taku-brand-logo {
+
+		}
+
+		p {
+			font-size: 36px;
+		}
+	}
+
+	// HOME - EXPERIENCE PORTALS
 	.experience_portal {
 		width: 100%;
 		max-height: 600px;
@@ -31,6 +59,8 @@
 			font-size: 30px;
 		}
 	}
+
+	// FOOTER
 	footer div.container {
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
@@ -49,6 +79,19 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+	//HOME - SLIDER
+	.bx-wrapper ul li div.story.wrapper {
+
+		img#taku-brand-logo {
+
+		}
+
+		p {
+			font-size: 36px;
+		}
+	}
+
+	// HOME - EXPERIENCE PORTALS
 	.experience_portal {
 		width: 100%;
 		max-height: 400px;
@@ -56,6 +99,8 @@
 			font-size: 30px;
 		}
 	}
+
+	// FOOTER
 	footer div.container {
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
@@ -74,6 +119,26 @@
 }
 
 @media all and (max-width: 480px) {
+	//HOME - SLIDER
+	.bx-wrapper ul li div.story.wrapper {
+		min-height: 400px;
+
+		-webkit-justify-content: flex-start;
+		justify-content: flex-start;
+
+		img#taku-brand-logo {
+			padding: 10% 0 5% 0;
+			width: 40%;
+		}
+
+		p {
+			width: 100%;
+			padding: 0 5%;
+			font-size: 24px;
+		}
+	}
+
+	// HOME - EXPERIENCE PORTALS
 	.experience_portal {
 		width: 100%;
 		max-height: 400px;
@@ -89,7 +154,8 @@
 		-webkit-transform: translate3d(0,-175%,0);
 	    transform: translate3d(0,-175%,0);
 	} 
-
+	
+	// FOOTER
 	footer div.container {
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
@@ -130,7 +196,15 @@
 
 /* Landscape */
 @media screen and (orientation:landscape) {
-
+	div.wrap {
+		display: none;
+		visibility: hidden;
+	}
+	body::before {
+		content: "This website was designed for Portrait Orientation only.";
+		width: 100%;
+		text-align: center;
+	}
 }
 
 

@@ -1,21 +1,32 @@
 // OVERRIDES
 
 //bx-slider
-.bx-wrapper {}
+.bx-wrapper {
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    background: #fff;
+    margin: 0;
+	// max-height: 900px;
+	// overflow: hidden;
+}
 
 .bx-wrapper .bx-controls-direction a {
 	top: auto;
-	bottom: 10px;
+	bottom: 8%;
     margin-top: 0;
     outline: inherit;
     width: auto;
     height: auto;
-    max-height: 48px;
-    max-width: 48px;
     text-indent: 0;
 }
 
-.bx-wrapper .bx-prev {
+.bx-wrapper ul li div.story.wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 700px;
+	background: no-repeat top center;
+	background-size: cover;
+
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -23,6 +34,51 @@
 	display: flex;	
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
+	-webkit-flex-direction: column; /* works with row or column */
+	flex-direction: column;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+
+	img#taku-brand-logo {
+		width: 25%;
+		max-width: 350px;
+		z-index: 10;
+	}
+
+	p {
+		width: 50%;
+		max-width: 640px;
+		margin-top: 2.5%;
+		text-align: center;
+		color: #fff;
+		font-size: 36px;
+		z-index: 10;
+		font-family: 'Adobe Garmond Pro';
+		font-style: italic;
+		line-height: 100%;
+	}
+}
+
+ .bx-wrapper ul li div.story.wrapper::before {
+ 		content: '';
+ 		cursor: pointer;
+ 	    position: absolute;
+ 	    top: 0;
+ 	    left: 0;
+ 	    width: 100%;
+ 	    height: 100%;
+ 	    background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%, gba(0,0,0,0.4) 100%);
+ 	    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);
+ }
+
+ .bx-wrapper .bx-controls-direction {
+ 	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
 	-webkit-flex-direction: row; /* works with row or column */
 	flex-direction: row;
 	-webkit-align-items: center;
@@ -30,13 +86,28 @@
 	-webkit-justify-content: center;
 	justify-content: center;
 
-    left: 45%;
+ }
+
+.bx-wrapper .bx-controls-direction a.bx-prev {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+
+    left: auto;
+    margin-left: -116px;
     background: none;
     color: #fff;
     border: 3px solid #fff;
     padding: 3px;
     font-size: 24px;
     text-decoration: none;
+    text-align: center;
     &:hover {
     	color: #ececec;
     	border: 3px solid #ececec;
@@ -44,5 +115,33 @@
     }
     i {
 
+    }
+}
+
+.bx-wrapper .bx-controls-direction a.bx-next {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+
+	height: 36px;
+    right: auto;
+    margin-left: -72px;
+    background: none;
+    color: #fff;
+    font-family: "Brandon Grotesque";
+    font-size: 18px;
+    border: 3px solid #fff;
+    padding: 3px 36px;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+    	color: #ececec;
+    	border: 3px solid #ececec;
+    	text-decoration: none;
     }
 }
