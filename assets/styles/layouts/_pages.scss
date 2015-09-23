@@ -1,0 +1,162 @@
+// Content 
+div#inner-content-wrap {
+	padding: 0 16px;
+}
+
+.page-header {
+	font-family: "Adobe Garmond Pro";
+	font-style: italic;
+}
+
+// ***** CONTACT PAGE STYLES ***** //
+
+// CONTACT INFO
+#taku-contact-info, .generic_content_wrap {
+	width: 100%;
+	padding-top: 32px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	.contact-info,
+	.generic_content_full,
+	.generic_content_left, 
+	.generic_content_right {
+		padding-top: 16px;
+		border-top: 1px solid #eee;
+		width: 100%;
+		.contact-content {
+			width: 100%;
+			.contact-content-row {
+				width: 100%;
+				color: #555;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: row;
+				flex-direction: row;
+				-webkit-align-items: center;
+				align-items: center;
+				-webkit-justify-content: flex-start;
+				justify-content: flex-start;
+				.contact-info-title {
+					width: 25%;
+					margin-top: 12px;
+					font-size: 110%;
+					font-weight: 500;
+				}
+				.contact-info-content {
+					width: 75%;
+					font-size: 200%;
+					font-weight: 500;
+				}	
+			}
+		}
+	}
+}
+
+.generic_content_wrap {
+	font-size: 125%;
+	padding-top:0px;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	.generic_content_full,
+	.generic_content_left, 
+	.generic_content_right {
+		border: none;
+	}
+	.generic_content_full {
+		padding-top: 0px;
+	}
+}
+
+
+// CONTACT FORM
+div.ccf-form-wrapper.form-id-223 {
+
+	form.ccf-form {
+ 		display: -webkit-flex;
+   		display: flex;
+   		-webkit-flex-direction: row;
+   		flex-direction: row;
+  		-webkit-align-items: center;
+  		align-items: center;
+  		-webkit-justify-content: flex-start;
+   		justify-content: flex-start;
+   		flex-wrap: wrap;
+		.form-title {
+			font-size: 30px;
+			font-family: 'Adobe Garmond Pro';
+			font-style: italic;
+			width: 100%;
+		}
+		.taku-contact-form-field, .taku-contact-form-comment {
+			width: 50%;
+			padding: 8px 0;
+			position: relative;
+			label {
+				display: none;
+				visibility: hidden;
+			}
+			input[type=text], textarea {
+				width: 100%;
+				background-color: #f9f9f9; 
+				border: 1px solid #d3d3d3;
+				// border: none;
+				height: 64px;
+				font-size: 24px;
+				font-family: 'brandon grotesque';
+				text-indent: 16px;
+				&:focus {
+					outline: 2px solid;
+					outline-color: #303338;
+				}
+			}
+			.error {
+				position: absolute;
+				width: 100%;
+				text-align: right;
+				margin-left: -16px;
+			}
+		}
+		.taku-contact-form-comment, .taku-contact-form-disclaimer, .taku-contact-form-captcha {
+			width: 100%;
+			textarea {
+				padding-top: 8px;
+				width: 100%;
+				min-height: 240px;
+			}
+			.error {
+				margin-left: 0;
+			}
+		}
+		
+		.taku-contact-form-disclaimer {
+			width: 100%;
+		}
+
+		.taku-contact-form-captcha {
+			width: 50%;
+		}
+
+		.form-submit {
+			input.ccf-submit-button {
+				color: #aaa;
+				background-color: #f9f9f9; 
+				border: 3px solid #d3d3d3;
+				padding: 3px 36px;
+				letter-spacing: 1px;
+				&:hover {
+					color: #303338;
+					border-color: #303338;
+				}
+				&:focus, :active {
+					outline: none;
+				}
+			}
+		}
+	}
+}

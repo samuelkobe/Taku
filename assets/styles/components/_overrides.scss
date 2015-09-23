@@ -24,7 +24,7 @@
 	position: relative;
 	width: 100%;
 	min-height: 700px;
-	background: no-repeat top center;
+	background: no-repeat center center;
 	background-size: cover;
 
 	display: -webkit-box;
@@ -48,8 +48,8 @@
 	}
 
 	p {
-		width: 50%;
-		max-width: 640px;
+		width: 75%;
+		max-width: 800px;
 		margin-top: 2.5%;
 		text-align: center;
 		color: #fff;
@@ -69,8 +69,8 @@
  	    left: 0;
  	    width: 100%;
  	    height: 100%;
- 	    background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%, gba(0,0,0,0.4) 100%);
- 	    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);
+ 	    background: -webkit-linear-gradient(top, rgba(0,0,0,0.25) 0%, gba(0,0,0,0.25) 100%);
+ 	    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
  }
 
  .bx-wrapper .bx-controls-direction {
@@ -108,13 +108,11 @@
     font-size: 24px;
     text-decoration: none;
     text-align: center;
+    z-index: 20;
     &:hover {
     	color: #ececec;
     	border: 3px solid #ececec;
     	text-decoration: none;
-    }
-    i {
-
     }
 }
 
@@ -133,12 +131,13 @@
     margin-left: -72px;
     background: none;
     color: #fff;
-    font-family: "Brandon Grotesque";
+    font-family: Brandon Grotesque;
     font-size: 18px;
     border: 3px solid #fff;
     padding: 3px 36px;
     text-decoration: none;
     text-align: center;
+    z-index: 20;
     &:hover {
     	color: #ececec;
     	border: 3px solid #ececec;

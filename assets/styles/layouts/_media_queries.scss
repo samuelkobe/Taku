@@ -79,6 +79,24 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+	// HEADER
+	.nav-wrap {
+		background-color: #343741;
+	}
+	.navbar-brand img {
+		position: relative;
+		&:hover {
+			top: 0;
+		}
+	}
+	nav.navbar-collapse div.menu-primary-navigation-container ul li {
+		text-align: center;
+		border-bottom: 1px solid;
+		&:hover, :active {
+			background-color: #ececec;
+		}
+	}
+
 	//HOME - SLIDER
 	.bx-wrapper ul li div.story.wrapper {
 
@@ -116,9 +134,38 @@
 			max-width: 40%;
 		}
 	}
+
+	// ********** SPECIFIC PAGES *********** //
+
+	// TAKU MEDIA
+	#taku-videos iframe {
+		width: 100%;
+		padding: 16px;
+		padding-left: 16px;
+		margin-left: 0;
+		height: 500px;
+	}
 }
 
 @media all and (max-width: 480px) {
+	// HEADER
+	.nav-wrap {
+		background-color: #343741;
+	}
+	.navbar-brand img {
+		position: relative;
+		&:hover {
+			top: 0;
+		}
+	}
+	nav.navbar-collapse div.menu-primary-navigation-container ul li {
+		text-align: center;
+		border-bottom: 1px solid;
+		&:hover, :active {
+			background-color: #ececec;
+		}
+	}
+
 	//HOME - SLIDER
 	.bx-wrapper ul li div.story.wrapper {
 		min-height: 400px;
@@ -186,6 +233,17 @@
 	   		padding: 12px;
 	   	}
 	}
+
+	// ********** SPECIFIC PAGES *********** //
+
+	// TAKU MEDIA
+	#taku-videos iframe {
+		width: 100%;
+		padding: 16px;
+		padding-left: 16px;
+		margin-left: 0;
+		height: 300px;
+	}
 }
 
 
@@ -196,15 +254,15 @@
 
 /* Landscape */
 @media screen and (orientation:landscape) {
-	div.wrap {
-		display: none;
-		visibility: hidden;
-	}
-	body::before {
-		content: "This website was designed for Portrait Orientation only.";
-		width: 100%;
-		text-align: center;
-	}
+	// div.wrap {
+	// 	display: none;
+	// 	visibility: hidden;
+	// }
+	// body::before {
+	// 	content: "This website was designed for Portrait Orientation only.";
+	// 	width: 100%;
+	// 	text-align: center;
+	// }
 }
 
 
