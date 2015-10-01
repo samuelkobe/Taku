@@ -18,10 +18,18 @@ h1, h2, h3 {
 	text-align: right;
 }
 
+.left {
+	text-align: left;
+}
+
 .padding-right {
 	padding-right: 16px !important;
 }
 
 .padding-left {
 	padding-left: 16px !important;
+}
+
+section#taku-contact-info >* :empty, img[src=""], .asymmetrical_content_wrap >* h2:empty {
+   display: none !important;
 }

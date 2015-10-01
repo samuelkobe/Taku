@@ -6,6 +6,11 @@
    480-less    - phone landscape & smaller
 --------------------------------------------*/
 @media all and (min-width: 1024px) and (max-width: 1280px) {
+	// HALF-BANNER
+	#half-banner-page-banner {
+		height: 450px;
+	}
+
 	//HOME - SLIDER
 	.bx-wrapper ul li div.story.wrapper {
 
@@ -39,6 +44,11 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
+	// HALF-BANNER
+	#half-banner-page-banner {
+		height: 400px;
+	}
+
 	//HOME - SLIDER
 	.bx-wrapper ul li div.story.wrapper {
 
@@ -76,6 +86,72 @@
 			max-width: 40%;
 		}
 	}
+
+	// ********** SPECIFIC PAGES *********** //
+
+	// TAKU CONTACT PAGE
+
+	#taku-contact-info, .generic_content_wrap, .asymmetrical_content_wrap {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		.contact-info,
+		.generic_content_full,
+		.generic_content_left, 
+		.generic_content_right,
+		.asymmetrical_content_left, 
+		.asymmetrical_content_right  {
+			text-align: center;
+			.contact-content {
+				.contact-content-row {
+					-webkit-flex-direction: column;
+					flex-direction: column;
+					.contact-info-title {
+						width: 100%;
+					}
+					.contact-info-content {
+						width: 100%;
+						font-size: 150%;
+						margin-bottom: 0px;
+					}	
+				}
+			}
+		}
+		.generic_content_left, 
+		.generic_content_right,
+		.asymmetrical_content_left, 
+		.asymmetrical_content_right {
+			text-align: left;
+		}
+	}
+
+	// SPECIFIC STYLES FOR ASYMMETRICAL TEMPLATES
+	.asymmetrical_content_wrap {
+		div {
+			img.half-width-images {
+				width: 100%;
+			}
+		}
+	}
+
+	div.ccf-form-wrapper.form-id-223 {
+		form.ccf-form {
+			.taku-contact-form-field,
+			.taku-contact-form-comment {
+				width: 100%;
+				padding: 0;
+			}
+		}
+	}
+
+	// ***** GLOBAL STYLES ***** //
+	.padding-right {
+		padding-right: 0px !important;
+	}
+
+	.padding-left {
+		padding-left: 0px !important;
+	}
+
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
@@ -95,6 +171,11 @@
 		&:hover, :active {
 			background-color: #ececec;
 		}
+	}
+
+	// HALF-BANNER
+	#half-banner-page-banner {
+		height:250px;
 	}
 
 	//HOME - SLIDER
@@ -145,6 +226,70 @@
 		margin-left: 0;
 		height: 500px;
 	}
+
+	// TAKU CONTACT PAGE
+
+	#taku-contact-info, .generic_content_wrap, .asymmetrical_content_wrap {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		.contact-info,
+		.generic_content_full,
+		.generic_content_left, 
+		.generic_content_right,
+		.asymmetrical_content_left, 
+		.asymmetrical_content_right  {
+			text-align: center;
+			.contact-content {
+				.contact-content-row {
+					-webkit-flex-direction: column;
+					flex-direction: column;
+					.contact-info-title {
+						width: 100%;
+					}
+					.contact-info-content {
+						width: 100%;
+						font-size: 150%;
+						margin-bottom: 0px;
+					}	
+				}
+			}
+		}
+		.generic_content_left, 
+		.generic_content_right,
+		.asymmetrical_content_left, 
+		.asymmetrical_content_right {
+			text-align: left;
+		}
+	}
+
+	// SPECIFIC STYLES FOR ASYMMETRICAL TEMPLATES
+	.asymmetrical_content_wrap {
+		div {
+			img.half-width-images {
+				width: 100%;
+			}
+		}
+	}
+
+	div.ccf-form-wrapper.form-id-223 {
+		form.ccf-form {
+			.taku-contact-form-field,
+			.taku-contact-form-comment {
+				width: 100%;
+				padding: 0;
+			}
+		}
+	}
+
+
+	// ***** GLOBAL STYLES ***** //
+	.padding-right {
+		padding-right: 0px !important;
+	}
+
+	.padding-left {
+		padding-left: 0px !important;
+	}
 }
 
 @media all and (max-width: 480px) {
@@ -164,6 +309,11 @@
 		&:hover, :active {
 			background-color: #ececec;
 		}
+	}
+
+	// HALF-BANNER
+	#half-banner-page-banner {
+		height: 200px;
 	}
 
 	//HOME - SLIDER
@@ -243,6 +393,70 @@
 		padding-left: 16px;
 		margin-left: 0;
 		height: 300px;
+	}
+
+	// TAKU CONTACT PAGE
+
+	#taku-contact-info, .generic_content_wrap, .asymmetrical_content_wrap {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		.contact-info,
+		.generic_content_full,
+		.generic_content_left, 
+		.generic_content_right,
+		.asymmetrical_content_left, 
+		.asymmetrical_content_right {
+			text-align: center;
+			.contact-content {
+				.contact-content-row {
+					-webkit-flex-direction: column;
+					flex-direction: column;
+					.contact-info-title {
+						width: 100%;
+					}
+					.contact-info-content {
+						width: 100%;
+						font-size: 150%;
+						margin-bottom: 0px;
+					}	
+				}
+			}
+		}
+		.generic_content_left, 
+		.generic_content_right,
+		.asymmetrical_content_left, 
+		.asymmetrical_content_right {
+			text-align: left;
+		}
+	}
+
+	// SPECIFIC STYLES FOR ASYMMETRICAL TEMPLATES
+	.asymmetrical_content_wrap {
+		div {
+			img.half-width-images {
+				width: 100%;
+			}
+		}
+	}
+
+	div.ccf-form-wrapper.form-id-223 {
+		form.ccf-form {
+			.taku-contact-form-field,
+			.taku-contact-form-comment {
+				width: 100%;
+				padding: 0;
+			}
+		}
+	}
+
+
+	// ***** GLOBAL STYLES ***** //
+	.padding-right {
+		padding-right: 0px !important;
+	}
+
+	.padding-left {
+		padding-left: 0px !important;
 	}
 }
 

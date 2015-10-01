@@ -11,7 +11,7 @@ div#inner-content-wrap {
 // ***** CONTACT PAGE STYLES ***** //
 
 // CONTACT INFO
-#taku-contact-info, .generic_content_wrap {
+#taku-contact-info, .generic_content_wrap, .asymmetrical_content_wrap {
 	width: 100%;
 	padding-top: 32px;
 	display: -webkit-flex;
@@ -25,9 +25,10 @@ div#inner-content-wrap {
 	.contact-info,
 	.generic_content_full,
 	.generic_content_left, 
-	.generic_content_right {
+	.generic_content_right,
+	.asymmetrical_content_left, 
+	.asymmetrical_content_right {
 		padding-top: 16px;
-		border-top: 1px solid #eee;
 		width: 100%;
 		.contact-content {
 			width: 100%;
@@ -47,6 +48,9 @@ div#inner-content-wrap {
 					margin-top: 12px;
 					font-size: 110%;
 					font-weight: 500;
+					p {
+						border-top: 1px solid #eee;
+					}
 				}
 				.contact-info-content {
 					width: 75%;
@@ -58,14 +62,16 @@ div#inner-content-wrap {
 	}
 }
 
-.generic_content_wrap {
+.generic_content_wrap, .asymmetrical_content_wrap {
 	font-size: 125%;
 	padding-top:0px;
 	-webkit-align-items: flex-start;
 	align-items: flex-start;
 	.generic_content_full,
 	.generic_content_left, 
-	.generic_content_right {
+	.generic_content_right,
+	.asymmetrical_content_left, 
+	.asymmetrical_content_right {
 		border: none;
 	}
 	.generic_content_full {
@@ -73,6 +79,31 @@ div#inner-content-wrap {
 	}
 }
 
+// SPECIFIC STYLES FOR ASYMMETRICAL TEMPLATES
+
+.asymmetrical_content_wrap {
+	div {
+		h2 {
+			padding: 32px 0 8px 0;
+		}
+		p {
+			font-size: 20px;
+			line-height: 125%;
+			padding-bottom: 16px;
+		}
+		img {
+			width: 100%;
+			padding: 0;
+			padding-top: 32px;
+		}
+		img:first-child {
+			padding-top: 0;
+		}
+		img.half-width-images {
+			width: 50%;
+		}
+	}
+}
 
 // CONTACT FORM
 div.ccf-form-wrapper.form-id-223 {
