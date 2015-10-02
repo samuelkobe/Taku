@@ -1,10 +1,34 @@
 /*------------------------------------------
-  Responsive Grid Media Queries - 1280, 1024, 768, 480
+  Responsive Grid Media Queries - 1800, 1280, 1024, 768, 480
+   1800-1280   - massive desktop
    1280-1024   - desktop (default grid)
    1024-768    - tablet landscape
    768-480     - tablet 
    480-less    - phone landscape & smaller
 --------------------------------------------*/
+@media all and (min-width: 1280px) and (max-width: 1800px) {
+	//SPECIFIC STYLES FOR POSTS
+		// SELECT BOX STYLES FOR EXPERIENCES
+	.experience-select-box {
+		position: relative;
+	    padding: 16px;
+	   	margin: 0;
+	    font-size: 24px;
+	    line-height: 100%;
+	    width: 100%;
+	    height: 58px;
+	}
+
+	.experience-select-box select {
+		width: 20%;
+		padding-left: 8px;
+	}
+}
+
+/* 	--------------------------------------------
+	-------------------BREAK--------------------
+	--------------------------------------------  */
+
 @media all and (min-width: 1024px) and (max-width: 1280px) {
 	// HALF-BANNER
 	#half-banner-page-banner {
@@ -32,6 +56,23 @@
 		}
 	}
 
+	//SPECIFIC STYLES FOR POSTS
+		// SELECT BOX STYLES FOR EXPERIENCES
+	.experience-select-box {
+		position: relative;
+	    padding: 16px;
+	   	margin: 0;
+	    font-size: 24px;
+	    line-height: 100%;
+	    width: 100%;
+	    height: 58px;
+	}
+
+	.experience-select-box select {
+		width: 20%;
+		padding-left: 8px;
+	}
+
 	// FOOTER
 	footer div.container {
 		height: 200px
@@ -42,6 +83,10 @@
 		}
 	}
 }
+
+/* 	--------------------------------------------
+	-------------------BREAK--------------------
+	--------------------------------------------  */
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
 	// HALF-BANNER
@@ -68,6 +113,10 @@
 		h2 {
 			font-size: 30px;
 		}
+	}
+
+	.experience_container {
+		width: 100%;
 	}
 
 	// FOOTER
@@ -133,6 +182,23 @@
 		}
 	}
 
+	//SPECIFIC STYLES FOR POSTS
+		// SELECT BOX STYLES FOR EXPERIENCES
+	.experience-select-box {
+		position: relative;
+	    padding: 16px;
+	   	margin: 0;
+	    font-size: 18px;
+	    line-height: 100%;
+	    width: 100%;
+	    height: 50px;
+	}
+
+	.experience-select-box select {
+		width: 20%;
+		padding-left: 8px;
+	}
+
 	div.ccf-form-wrapper.form-id-223 {
 		form.ccf-form {
 			.taku-contact-form-field,
@@ -153,6 +219,10 @@
 	}
 
 }
+
+/* 	--------------------------------------------
+	-------------------BREAK--------------------
+	--------------------------------------------  */
 
 @media all and (min-width: 480px) and (max-width: 768px) {
 	// HEADER
@@ -197,6 +267,10 @@
 		h2 {
 			font-size: 30px;
 		}
+	}
+
+	.experience_container {
+		width: 100%;
 	}
 
 	// FOOTER
@@ -271,6 +345,25 @@
 		}
 	}
 
+	//SPECIFIC STYLES FOR POSTS
+		// SELECT BOX STYLES FOR EXPERIENCES
+	.experience-select-box {
+		position: relative;
+	    padding: 8px;
+	   	margin: 0;
+	    font-size: 16px;
+	    line-height: 100%;
+	    width: 100%;
+	    height: 30px;
+	    border-top: 2px solid #ccc;
+	    border-bottom: 2px solid #ccc;
+	}
+
+	.experience-select-box select {
+		width: 100%;
+		padding-left: 8px;
+	}
+
 	div.ccf-form-wrapper.form-id-223 {
 		form.ccf-form {
 			.taku-contact-form-field,
@@ -291,6 +384,10 @@
 		padding-left: 0px !important;
 	}
 }
+
+/* 	--------------------------------------------
+	-------------------BREAK--------------------
+	--------------------------------------------  */
 
 @media all and (max-width: 480px) {
 	// HEADER
@@ -350,7 +447,11 @@
 	a.experience_link:hover .experience_description {
 		-webkit-transform: translate3d(0,-175%,0);
 	    transform: translate3d(0,-175%,0);
-	} 
+	}
+
+	.experience_container {
+		width: 100%;
+	}
 	
 	// FOOTER
 	footer div.container {
@@ -439,6 +540,25 @@
 		}
 	}
 
+	//SPECIFIC STYLES FOR POSTS
+		// SELECT BOX STYLES FOR EXPERIENCES
+	.experience-select-box {
+		position: relative;
+	    padding: 8px;
+	   	margin: 0;
+	    font-size: 14px;
+	    line-height: 100%;
+	    width: 100%;
+	    height: 30px;
+	   	border-top: 2px solid #ccc;
+	   	border-bottom: 2px solid #ccc;
+	}
+
+	.experience-select-box select {
+		width: 100%;
+		padding-left: 8px;
+	}
+
 	div.ccf-form-wrapper.form-id-223 {
 		form.ccf-form {
 			.taku-contact-form-field,
@@ -448,7 +568,6 @@
 			}
 		}
 	}
-
 
 	// ***** GLOBAL STYLES ***** //
 	.padding-right {

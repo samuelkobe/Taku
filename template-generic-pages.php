@@ -18,6 +18,7 @@
 		</div>
 
 		<div class="generic_content_wrap">
+			<img src="<?php the_field('getting_here_map'); ?>" id="taku-map" alt="Taku Map"  />
 			<div class="generic_content_full">
 				<?php the_field('generic_page_text_area_full'); ?>
 			</div>

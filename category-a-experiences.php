@@ -37,7 +37,7 @@ $category_types = array(
   // args
   $args = array(
     'numberposts' => -1,
-    'category_name' => 'escape-experience',
+    'category_name' => 'a-experiences',
     'orderby'       => 'rand'
   );
 
@@ -45,7 +45,7 @@ $category_types = array(
   $the_query = new WP_Query( $args );
 
   if( $the_query->have_posts()) :
-    while( $the_query->have_posts()) : $the_query->the_post(); ?>     
+    while( $the_query->have_posts()) : $the_query->the_post(); ?>
      
       <?php get_template_part('templates/experiences'); ?>
 
