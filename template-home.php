@@ -9,29 +9,29 @@
 		<div class="story wrapper" style="background-image: url(<?php the_field('story_part_01_image'); ?>)">
 		  
 		  <img src="<?php the_field('taku_brand'); ?>" id="taku-brand-logo" alt="Taku branding and logo"  />
-		  <p><?php the_field('story_part_01_caption'); ?></p>
+		  <p class="story-text first-story-text"><?php the_field('story_part_01_caption'); ?></p>
 
 		</div>
 	</li>
 	<li>
 		<div class="story wrapper" style="background-image: url(<?php the_field('story_part_02_image'); ?>)">
-		  <p><?php the_field('story_part_02_caption'); ?></p>
+		  <p class="story-text"><?php the_field('story_part_02_caption'); ?></p>
 		</div>
 	</li>
 	<li>
 		<div class="story wrapper" style="background-image: url(<?php the_field('story_part_03_image'); ?>)">
-		  <p><?php the_field('story_part_03_caption'); ?></p>
+		  <p class="story-text"><?php the_field('story_part_03_caption'); ?></p>
 
 		</div>
 	</li>
 	<li>
 		<div class="story wrapper" style="background-image: url(<?php the_field('story_part_04_image'); ?>)">
-		  <p><?php the_field('story_part_04_caption'); ?></p>
+		  <p class="story-text"><?php the_field('story_part_04_caption'); ?></p>
 		</div>
 	</li>
 	<li>
 		<div class="story wrapper" style="background-image: url(<?php the_field('story_part_05_image'); ?>)">
-		  <p><?php the_field('story_part_05_caption'); ?></p>
+		  <p class="story-text"><?php the_field('story_part_05_caption'); ?></p>
 		</div>
 	</li>
 </ul>

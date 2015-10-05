@@ -8,11 +8,32 @@
       $(document).ready(function(){
         $('.bxslider').bxSlider({
           mode: 'vertical',
-          prevText: '<i class="fa fa-long-arrow-left"></i>',
+          prevText: '<i class="fa fa-long-arrow-left hide-bx-prev"></i>',
           nextText: 'Continue',
           pager: false,
           touchEnabled: false
         });
+
+        var bx_next_counter = 0;
+        $('.bx-prev').addClass('hide-bx-prev');
+
+        //hide back button to start.
+        $(".bx-next").click(function(){
+          bx_next_counter ++;
+          if (bx_next_counter > 0) {
+            $('.bx-prev').removeClass('hide-bx-prev');
+            $('.bx-prev i').removeClass('hide-bx-prev');
+          }
+        });
+
+        $(".bx-prev").click(function(){
+          bx_next_counter --;
+          if (bx_next_counter == 0) {
+            $('.bx-prev').addClass('hide-bx-prev');
+            $('.bx-prev i').addClass('hide-bx-prev');
+          }
+        });
+
       });
     });
   	// used to ensure first touch on over elements activates and not.
@@ -20,8 +41,8 @@
   </script>
   <script>
     jQuery(function ($) {
-
-      $(".experience_link").unbind().click(makeItOpen);
+      // Open and closing of experiences.
+      $(".experience_link.on_experiences").unbind().click(makeItOpen);
 
       function makeItOpen(e) {
         e.preventDefault();
@@ -39,8 +60,7 @@
         } else {
           $(this).parent().addClass('expanded');
         }
-      } 
-
+      }
     });
   </script>
 </footer>

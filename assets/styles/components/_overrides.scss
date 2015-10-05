@@ -116,6 +116,12 @@
     }
 }
 
+.hide-bx-prev {
+ 	display: none;
+   	visibility: hidden;
+   	border: none;
+}
+
 .bx-wrapper .bx-controls-direction a.bx-next {
 	display: -webkit-box;
 	display: -moz-box;

@@ -105,6 +105,25 @@ div#inner-content-wrap {
 	}
 }
 
+.asymmetrical_content_wrap.accommodations_padding {
+	padding: 16px 0 64px 0;
+}
+
+.asymmetrical_inner_content_wrap {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	padding-top: 16px;
+	p {
+		padding-top: 8px;
+	}
+}
+
 // CONTACT FORM
 div.ccf-form-wrapper.form-id-223 {
 
