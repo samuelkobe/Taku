@@ -39,7 +39,7 @@ footer div.container section.widget {
   	-webkit-justify-content: center;
    	justify-content: center;
 	overflow: hidden;
-	a:link {
+	a:link, a:visited {
 		color: #777;
 		text-decoration: underline;
 		&:hover {

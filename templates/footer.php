@@ -39,15 +39,18 @@
   	// used to ensure first touch on over elements activates and not.
     document.addEventListener("touchstart", function(){}, true);
   </script>
+
   <script>
+    //EXPERIENCES SCRIPT FOR EXEPERIENCE CONTENT REVEAL
     jQuery(function ($) {
       // Open and closing of experiences.
-      $(".experience_link.on_experiences").unbind().click(makeItOpen);
+      $(".experience_link_ep.on_experiences").unbind().click(makeItOpen);
 
       function makeItOpen(e) {
         e.preventDefault();
         if ($('.expanded').length > 0) {
           var isOpen = $(this).parent().hasClass('expanded');
+          $('.expanded').css( "height", $('.expanded').height()-$('.expanded').children('.experience_inner_content').outerHeight());
           $('.expanded').removeClass('expanded');
             if (isOpen) {
               return;
@@ -56,9 +59,11 @@
           setTimeout(function() {
             $('.expanded').removeClass('expanded');
             self.parent().addClass('expanded');
+            $('.expanded').css( "height", $('.expanded').children('.experience_inner_content').outerHeight()+$('.expanded').height());
           }, 800);
         } else {
           $(this).parent().addClass('expanded');
+          $('.expanded').css( "height", $('.expanded').children('.experience_inner_content').outerHeight()+$('.expanded').height());
         }
       }
     });

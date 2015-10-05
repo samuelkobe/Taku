@@ -20,19 +20,32 @@
 	width: 33%;
 	height: 400px;
 	overflow: hidden;
-	-webkit-transition: all .8s linear; /* Safari */
-    transition: all .8s linear;
+	-webkit-transition: all .8s ease-in-out; /* Safari */
+    transition: all .8s ease-in-out;
 	h2 {
 		font-size: 42px;
+	}
+	.experience_inner_content p {
+		filter: alpha(opacity=01);
+		opacity: 0.01;
+		display: block;
+		margin-bottom: 0;
 	}
 }
 
 .experience_container.expanded {
-	height: 800px;
-
+	// height: 800px;
+	-webkit-transition: all .8s ease-out; /* Safari */
+	transition: all .8s ease-out;
+	.experience_inner_content p {
+		filter: alpha(opacity=100);
+  		opacity: 1;
+  		-webkit-transition: all .8s ease-out; /* Safari */
+    	transition: all .8s ease-out;
+	}
 }
 
-.experience_container a.experience_link, 
+.experience_container a.experience_link_ep, 
 .experience_container a.experience_link:hover {
 	z-index:10; 
 	width: 100%;
@@ -56,7 +69,7 @@
 	background-position: center center;
 }
 
-.experience_title {
+.experience_title_ep {
 	position: absolute;
 	top: 45%;
 	width: 100%;
@@ -70,12 +83,12 @@
     transform: translate3d(0,0,0);
 }
 
-a.experience_link:hover .experience_title  {
+a.experience_link_ep:hover .experience_title_ep  {
 	-webkit-transform: translate3d(0,-60px,0);
 	transform: translate3d(0,-60px,0);
 }
 
-.experience_title span {
+.experience_title_ep span {
 	position: relative;
 	height: 2px;
 	padding-bottom: 8px;
@@ -85,7 +98,7 @@ a.experience_link:hover .experience_title  {
     transition: border-bottom-color .45s, padding-bottom .45s;
 }
 
-a.experience_link:hover .experience_title span {
+a.experience_link_ep:hover .experience_title_ep span {
 	padding-bottom: 2px;
 	border-bottom-color: #fff;
 }
@@ -106,13 +119,13 @@ a.experience_link:hover .experience_title span {
     transform: translate3d(0,0,0);
 }
 
-a.experience_link:hover .experience_description {
+a.experience_link_ep:hover .experience_description {
 	opacity: 1;
 	-webkit-transform: translate3d(0,-75%,0);
     transform: translate3d(0,-75%,0);
 } 
 
-a.experience_link div.inner_experience_wrap::before {
+a.experience_link_ep div.inner_experience_wrap::before {
 	content: '';
 	cursor: pointer;
     position: absolute;
@@ -123,13 +136,13 @@ a.experience_link div.inner_experience_wrap::before {
     -webkit-transition: transform .35s, opacity .35s;
     transition: transform .35s, opacity .35s;
     opacity: 0;
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(9,36,82,0.7) 75%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(9,36,82,0.7) 75%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 75%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 75%);
     -webkit-transform: translate3d(0,50%,0);
     transform: translate3d(0,50%,0);
 }
 
-a.experience_link:hover div.inner_experience_wrap::before {
+a.experience_link_ep:hover div.inner_experience_wrap::before {
 	-webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     opacity: 1;
@@ -149,7 +162,6 @@ a.experience_link:hover div.inner_experience_wrap::before {
     justify-content: center;
  	top: 0;
  	width: 100%;
- 	height: 50%;
  	background-color: #fff;
  	-webkit-flex-direction: row; /* works with row or column */
    	flex-direction: row;

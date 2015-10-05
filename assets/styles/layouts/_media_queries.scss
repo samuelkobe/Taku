@@ -61,6 +61,16 @@
 		}
 	}
 
+	.experience_description {
+		width: 70%;
+	}
+
+	.experience_container {
+		.experience_title_ep {
+			font-size: 54px;
+		}
+	}
+
 	//SPECIFIC STYLES FOR POSTS
 		// SELECT BOX STYLES FOR EXPERIENCES
 	.experience-select-box {
@@ -127,6 +137,10 @@
 
 	.experience_container {
 		width: 100%;
+
+		.experience_title_ep {
+			font-size: 54px;
+		}
 	}
 
 	// FOOTER
@@ -285,6 +299,10 @@
 
 	.experience_container {
 		width: 100%;
+
+		.experience_title_ep {
+			font-size: 46px;
+		}
 	}
 
 	// FOOTER
@@ -465,12 +483,13 @@
 		}
 	}
 	.experience_description {
-		width: 100%;
+		width: 90%;
 		padding: 2%;
+		font-size: 80%;
 	}
 	a.experience_link:hover .experience_description {
-		-webkit-transform: translate3d(0,-175%,0);
-	    transform: translate3d(0,-175%,0);
+		-webkit-transform: translate3d(0,-50%,0);
+	    transform: translate3d(0,-50%,0);
 	}
 
 	.experience_container {
