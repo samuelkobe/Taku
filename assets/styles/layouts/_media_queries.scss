@@ -344,6 +344,10 @@
 
 @media all and (min-width: 480px) and (max-width: 768px) {
 	// HEADER
+	#menu-primary-navigation {
+		width: 100%;
+	}
+
 	.nav-wrap {
 		background-color: #343741;
 	}
@@ -570,6 +574,10 @@
 
 @media all and (max-width: 480px) {
 	// HEADER
+	#menu-primary-navigation {
+		width: 100%;
+	}
+
 	.nav-wrap {
 		background-color: #343741;
 	}

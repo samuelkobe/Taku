@@ -12,6 +12,14 @@ header  {
 	background-color: #fff;
 }
 
+.menu-primary-navigation-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+}
+
 .nav-wrap {
 	width: 100%;
 	height: 79px;
