@@ -68,4 +68,16 @@
       }
     });
   </script>
+  <script>
+  //DROPDOWN SELECTOR
+   jQuery(function ($) {
+      var url = window.location.pathname.slice(0,-1);
+      $(".experience-select-box select option").each(function() {
+        var value = $(this).val();
+        if(url === value) {
+            $(this).attr('selected', 'selected')
+        };
+      });
+    });
+  </script>
 </footer>

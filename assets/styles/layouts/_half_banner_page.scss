@@ -23,10 +23,29 @@
 }
 
 #half-banner-page-banner {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column; /* works with row or column */
+	flex-direction: column;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
 	width: 100%;
 	height: 750px;
 	background-size: cover;
 	background-position: center center;
+	color: #fff !important;
+	h1.half_banner_content_title {
+		color: #fff !important;
+		font-size: 400%;
+		z-index: 10px;
+		width: 60%;
+		text-align: center;
+		font-style: normal;
+		text-shadow: 1px 1px #777777;
+	}
 }
 
 #taku-videos iframe {

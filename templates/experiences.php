@@ -5,6 +5,7 @@
 	</div>
 	</a>
 	<div class="experience_inner_content">
+		<i class="fa fa-sort-asc experience_tab"></i>
 		<?php the_field('experience_content_text'); ?>
 	</div>
 </div>

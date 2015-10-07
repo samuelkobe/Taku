@@ -29,3 +29,30 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+
+
+
+// CUSTOM TAKU THEME OPTIONS
+if (function_exists('acf_add_options_page')) {
+
+  acf_add_options_page(array(
+    'page_title'  => 'Theme General Settings',
+    'menu_title'  => 'Taku Settings',
+    'menu_slug'   => 'theme-general-settings',
+    'capability'  => 'edit_posts',
+    'redirect'    => false
+  ));
+  
+  acf_add_options_sub_page(array(
+    'page_title'  => 'Theme Header Settings',
+    'menu_title'  => 'Book Now Button',
+    'parent_slug' => 'theme-general-settings',
+  ));
+  
+  acf_add_options_sub_page(array(
+    'page_title'  => 'Theme Footer Settings',
+    'menu_title'  => 'Static Banners',
+    'parent_slug' => 'theme-general-settings',
+  ));
+}

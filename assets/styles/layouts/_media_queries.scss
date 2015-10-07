@@ -6,7 +6,7 @@
    768-480     - tablet 
    480-less    - phone landscape & smaller
 --------------------------------------------*/
-@media all and (min-width: 1280px) and (max-width: 1800px) {
+@media all and (min-width: 1281px) and (max-width: 1800px) {
 	//SPECIFIC STYLES FOR POSTS
 		// SELECT BOX STYLES FOR EXPERIENCES
 	.experience-select-box {
@@ -22,6 +22,30 @@
 	.experience-select-box select {
 		width: 20%;
 		padding-left: 8px;
+	}
+	.experience_container {
+		position: relative;
+		width: 25%;
+	}
+
+	//IMAGES THROUGH WORDPRESS
+	a {
+		img.size-full {
+			width: 100%;
+			height: auto;
+		}
+		img.size-large {
+			width: 75%;
+			height: auto;
+		}
+		img.size-medium {
+			width: 50%;
+			height: auto;
+		}
+		img.size-thumbnail {
+			width: 25%;
+			height: auto;
+		}
 	}
 }
 
@@ -66,8 +90,9 @@
 	}
 
 	.experience_container {
+		width: 33%;
 		.experience_title_ep {
-			font-size: 54px;
+			font-size: 48px;
 		}
 	}
 
@@ -97,6 +122,26 @@
 			max-width: 55%;
 		}
 	}
+
+	//IMAGES THROUGH WORDPRESS
+	a {
+		img.size-full {
+			width: 100%;
+			height: auto;
+		}
+		img.size-large {
+			width: 75%;
+			height: auto;
+		}
+		img.size-medium {
+			width: 25%;
+			height: auto;
+		}
+		img.size-thumbnail {
+			width: 10%;
+			height: auto;
+		}
+	}
 }
 
 /* 	--------------------------------------------
@@ -104,6 +149,12 @@
 	--------------------------------------------  */
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
+	nav div ul.nav li a {
+		font-size: 15.5px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
 	// HALF-BANNER
 	#half-banner-page-banner {
 		height: 400px;
@@ -139,7 +190,16 @@
 		width: 100%;
 
 		.experience_title_ep {
-			font-size: 54px;
+			font-size: 48px;
+		}
+	}
+
+	#taku_home_video {
+		width: 100%;
+		height: 480px;
+		iframe {
+			width: 100%;
+			height: 480px;
 		}
 	}
 
@@ -242,6 +302,40 @@
 		padding-left: 0px !important;
 	}
 
+	//IMAGES THROUGH WORDPRESS
+	a {
+		img.size-full {
+			width: 100%;
+			height: auto;
+		}
+		img.size-large {
+			width: 75%;
+			height: auto;
+		}
+		img.size-medium {
+			width: 50%;
+			height: auto;
+		}
+		img.size-thumbnail {
+			width: 25%;
+			height: auto;
+		}
+	}
+
+	//BOOK NOW BUTTON
+	#booknow_button {
+		height:60px;
+		width:140px;
+		div {
+			a {
+				width: 100%;
+				height:60px;
+				line-height: 60px;
+				font-size: 140%;
+			}
+		}
+	}
+
 }
 
 /* 	--------------------------------------------
@@ -302,6 +396,15 @@
 
 		.experience_title_ep {
 			font-size: 46px;
+		}
+	}
+
+	#taku_home_video {
+		width: 100%;
+		height: 320px;
+		iframe {
+			width: 100%;
+			height: 320px;
 		}
 	}
 
@@ -406,7 +509,6 @@
 		}
 	}
 
-
 	// ***** GLOBAL STYLES ***** //
 	.padding-right {
 		padding-right: 0px !important;
@@ -414,6 +516,51 @@
 
 	.padding-left {
 		padding-left: 0px !important;
+	}
+
+	//IMAGES THROUGH WORDPRESS
+	a {
+		img.size-full {
+			width: 100%;
+			height: auto;
+		}
+		img.size-large {
+			width: 100%;
+			height: auto;
+		}
+		img.size-medium {
+			width: 50%;
+			height: auto;
+		}
+		img.size-thumbnail {
+			width: 25%;
+			height: auto;
+		}
+	}
+
+	//BOOK NOW BUTTON
+	#booknow_button {
+		height:40px;
+		width:120px;
+		div {
+			a {
+				width: 100%;
+				height:40px;
+				line-height: 40px;
+				font-size: 100%;
+				border-bottom: 2px solid #E3912C;
+				border-left: 2px solid #E3912C;
+				border-right: 2px solid #E3912C;
+				&:hover {
+					color: #343741;
+					text-decoration: none;
+					border-bottom: 2px solid #343741;
+					border-left: 2px solid #343741;
+					border-right: 2px solid #343741;
+					background: #fff;
+				}
+			}
+		}
 	}
 }
 
@@ -494,6 +641,15 @@
 
 	.experience_container {
 		width: 100%;
+	}
+
+	#taku_home_video {
+		width: 100%;
+		height: 240px;
+		iframe {
+			width: 100%;
+			height: 240px;
+		}
 	}
 	
 	// FOOTER
@@ -620,6 +776,52 @@
 	.padding-left {
 		padding-left: 0px !important;
 	}
+
+	//IMAGES THROUGH WORDPRESS
+	a {
+		img.size-full {
+			width: 100%;
+			height: auto;
+		}
+		img.size-large {
+			width: 100%;
+			height: auto;
+		}
+		img.size-medium {
+			width: 75%;
+			height: auto;
+		}
+		img.size-thumbnail {
+			width: 25%;
+			height: auto;
+		}
+	}
+
+	//BOOK NOW BUTTON
+	#booknow_button {
+		height:40px;
+		width:120px;
+		div {
+			a {
+				width: 100%;
+				height:40px;
+				line-height: 40px;
+				font-size: 100%;
+				border-bottom: 2px solid #E3912C;
+				border-left: 2px solid #E3912C;
+				border-right: 2px solid #E3912C;
+				&:hover {
+					color: #343741;
+					text-decoration: none;
+					border-bottom: 2px solid #343741;
+					border-left: 2px solid #343741;
+					border-right: 2px solid #343741;
+					background: #fff;
+				}
+			}
+		}
+	}
+
 }
 
 

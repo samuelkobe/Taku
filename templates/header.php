@@ -20,4 +20,9 @@
       ?>
     </nav>
   </div>
+  <div id="booknow_button">
+    <div>
+      <a href="<?php the_field('book_now_button_link', 'option'); ?>"><?php the_field('book_now_button_title', 'option'); ?></a>
+    </div>
+  </div>
 </header>

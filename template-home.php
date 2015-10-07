@@ -86,11 +86,11 @@
 			
 	</section>
 
-<!-- 	<section id="taku_home_video">
-			<?php the_field('taku_video'); ?>
-	</section> -->
+	<section id="taku_home_video">
+		<?php the_field('taku_video'); ?>
+	</section>
 
-	<!-- <?php get_template_part('templates/page', 'header'); ?> -->
-  	<!-- <?php get_template_part('templates/content', 'page'); ?> -->
+<!-- 	<?php get_template_part('templates/page', 'header'); ?> 
+  	 <?php get_template_part('templates/content', 'page'); ?>  -->
  
 <?php endwhile; ?>

@@ -18,8 +18,6 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div id="half-banner-page-banner" style="background-image: url(<?php the_field('half_banner_page_banner'); ?>)">
-    </div>
     <div class="wrap" role="document">
       <div class="content">
         <main class="" role="main">
