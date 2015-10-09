@@ -80,4 +80,13 @@
       });
     });
   </script>
+
+  <script>
+  //FANCY BOX
+  jQuery(function ($) {
+      $(document).ready(function() {
+          $('.fancybox').fancybox();
+      });
+    });
+  </script>
 </footer>

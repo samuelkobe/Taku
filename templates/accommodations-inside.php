@@ -17,4 +17,26 @@
 			<a href="<?php the_field('accommodations_book_now_link'); ?>" target="_blank">Temporary Book Now Link</a>
 		</div>
 	</div>
+
+
+	<!-- EXTRA INFORMATION FOR ACCOMMODATIONS -->
+	<div class="asymmetrical_content_wrap accommodations_padding">
+		<?php 
+
+		$images = get_field('accommodation_gallery');
+
+		if( $images ): ?>
+		    <ul>
+		        <?php foreach( $images as $image ): ?>
+		            <li>
+		                <a href="<?php echo $image['url']; ?>" class="fancybox" title="<?php echo $image['title']; ?>" rel="<?php the_title(); ?>">
+		                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+		                </a>
+		                <p><?php echo $image['caption']; ?></p>
+		            </li>
+		        <?php endforeach; ?>
+		    </ul>
+		<?php endif; ?>
+	</div>
+
 </div>

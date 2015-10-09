@@ -41,7 +41,7 @@ if (function_exists('acf_add_options_page')) {
     'menu_title'  => 'Taku Settings',
     'menu_slug'   => 'theme-general-settings',
     'capability'  => 'edit_posts',
-    // 'redirect'    => false
+    'redirect'    => false
   ));
 
   acf_add_options_sub_page(array(
