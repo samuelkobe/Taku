@@ -23,7 +23,5 @@
 			<?php the_field('taku_video_10'); ?>
 		</section>
 
-		<?php get_template_part('templates/content', 'page'); ?>
-
   </div>
 <?php endwhile; ?>

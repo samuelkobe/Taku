@@ -17,7 +17,7 @@ $category_types = array(
 ); ?>
 <div class="experience-select-box">
 <select name="event-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> 
- <option value=""><?php echo esc_attr(__('Taku Experiences')); ?></option> 
+ <option value="/experiences"><?php echo esc_attr(__('Taku Experiences')); ?></option> 
  <?php 
   $categories = get_categories($category_types); 
   foreach ($categories as $category) {

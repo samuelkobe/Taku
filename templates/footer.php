@@ -50,7 +50,7 @@
         e.preventDefault();
         if ($('.expanded').length > 0) {
           var isOpen = $(this).parent().hasClass('expanded');
-          $('.expanded').css( "height", $('.expanded').height()-$('.expanded').children('.experience_inner_content').outerHeight());
+          $('.expanded').css( "height", 400);
           $('.expanded').removeClass('expanded');
             if (isOpen) {
               return;

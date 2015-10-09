@@ -7,6 +7,13 @@
    480-less    - phone landscape & smaller
 --------------------------------------------*/
 @media all and (min-width: 1281px) and (max-width: 1800px) {
+
+	#half-banner-page-banner {
+		h1.half_banner_content_title {
+			font-size: 400%;
+		}
+	}
+
 	//SPECIFIC STYLES FOR POSTS
 		// SELECT BOX STYLES FOR EXPERIENCES
 	.experience-select-box {
@@ -57,6 +64,9 @@
 	// HALF-BANNER
 	#half-banner-page-banner {
 		height: 450px;
+		h1.half_banner_content_title {
+			font-size: 350%;
+		}
 	}
 
 	// FULL-BANNER
@@ -158,11 +168,20 @@
 	// HALF-BANNER
 	#half-banner-page-banner {
 		height: 400px;
+		h1.half_banner_content_title {
+			font-size: 300%;
+		}
+		h1.half_banner_content_title.experience_specific_title {
+			font-size: 300%;
+		}
 	}
 
 	// FULL-BANNER
 	#full-banner-page-banner {
 		height: 400px;
+		h1#banner-title {
+			font-size:500%;
+		}
 	}
 
 	//HOME - SLIDER
@@ -264,6 +283,10 @@
 				width: 100%;
 			}
 		}
+		.asymmetrical_inner_content_wrap {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
 	}
 
 	//SPECIFIC STYLES FOR POSTS
@@ -322,18 +345,41 @@
 		}
 	}
 
+	//FLEX ORDER
+	.order-forward {
+	  	order: 1;
+	}
+
+	.order-back {
+	  	order: 5;
+	}
+
 	//BOOK NOW BUTTON
 	#booknow_button {
 		height:60px;
 		width:140px;
 		div {
 			a {
+				text-align: center;
+				display: table-cell;
+				text-align: center;
+				vertical-align: middle;
 				width: 100%;
 				height:60px;
+				min-width: 140px;
 				line-height: 60px;
 				font-size: 140%;
 			}
 		}
+	}
+
+	//FORM STUFF
+	.ccf-form-complete {
+		width: 100%;
+		color: green;
+		font-size: 100%;
+		font-weight: lighter;
+		padding: 18px;
 	}
 
 }
@@ -368,10 +414,16 @@
 	// HALF-BANNER
 	#half-banner-page-banner {
 		height:250px;
+		h1.half_banner_content_title {
+			font-size: 225%;
+		}
 	}
 	// FULL-BANNER
 	#full-banner-page-banner {
 		height: 250px;
+		h1#banner-title {
+			font-size:400%;
+		}
 	}
 
 	//HOME - SLIDER
@@ -482,6 +534,10 @@
 				width: 100%;
 			}
 		}
+		.asymmetrical_inner_content_wrap {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
 	}
 
 	//SPECIFIC STYLES FOR POSTS
@@ -542,14 +598,28 @@
 		}
 	}
 
+	//FLEX ORDER
+	.order-forward {
+	  	order: 1;
+	}
+
+	.order-back {
+	  	order: 5;
+	}
+
 	//BOOK NOW BUTTON
 	#booknow_button {
 		height:40px;
 		width:120px;
 		div {
 			a {
+				text-align: center;
+				display: table-cell;
+				text-align: center;
+				vertical-align: middle;
 				width: 100%;
 				height:40px;
+				min-width: 120px;
 				line-height: 40px;
 				font-size: 100%;
 				border-bottom: 2px solid #E3912C;
@@ -565,6 +635,14 @@
 				}
 			}
 		}
+	}
+	//FORM STUFF
+	.ccf-form-complete {
+		width: 100%;
+		color: green;
+		font-size: 100%;
+		font-weight: lighter;
+		padding: 18px;
 	}
 }
 
@@ -598,10 +676,16 @@
 	// HALF-BANNER
 	#half-banner-page-banner {
 		height: 200px;
+		h1.half_banner_content_title {
+			font-size: 200%;
+		}
 	}
 	// FULL-BANNER
 	#full-banner-page-banner {
 		height: 200px;
+		h1#banner-title {
+			font-size:250%;
+		}
 	}
 
 	//HOME - SLIDER
@@ -745,6 +829,12 @@
 				width: 100%;
 			}
 		}
+
+		.asymmetrical_inner_content_wrap {
+			padding-top: 16px;
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
 	}
 
 	//SPECIFIC STYLES FOR POSTS
@@ -805,15 +895,29 @@
 		}
 	}
 
+	//FLEX ORDER
+	.order-forward {
+	  	order: 1;
+	}
+
+	.order-back {
+	  	order: 5;
+	}
+
 	//BOOK NOW BUTTON
 	#booknow_button {
-		height:40px;
-		width:120px;
+		height:30px;
+		width:90px;
 		div {
 			a {
+				text-align: center;
+				display: table-cell;
+				text-align: center;
+				vertical-align: middle;
 				width: 100%;
-				height:40px;
-				line-height: 40px;
+				min-width: 90px;
+				height:30px;
+				line-height: 30px;
 				font-size: 100%;
 				border-bottom: 2px solid #E3912C;
 				border-left: 2px solid #E3912C;
@@ -828,6 +932,15 @@
 				}
 			}
 		}
+	}
+
+	//FORM STUFF
+	.ccf-form-complete {
+		width: 100%;
+		color: green;
+		font-size: 100%;
+		font-weight: lighter;
+		padding: 12px;
 	}
 
 }

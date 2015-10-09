@@ -18,6 +18,9 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+    <div id="half-banner-page-banner" style="background-image: url(<?php the_field('experience_page_banner_image', 'options'); ?>)">
+      <h1 class="half_banner_content_title experience_specific_title"><?php the_field('experience_escape_caption', 'options'); ?></h1>
+    </div>
     <div class="wrap" role="document">
       <div class="content">
         <main class="" role="main">

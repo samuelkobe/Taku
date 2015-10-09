@@ -114,14 +114,11 @@ div#inner-content-wrap {
 	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	padding-top: 16px;
-	p {
-		padding-top: 8px;
-	}
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	-webkit-justify-content: left;
+	justify-content: left;
+	padding-top: 32px;
 }
 
 // CONTACT FORM
@@ -213,6 +210,7 @@ div.ccf-form-wrapper.form-id-223 {
 
 // GETTING HERE PAGE
 #taku-map {
+	flex: 1 0 auto;
 	padding-top: 32px;
 	width: 100%;
 	height: auto

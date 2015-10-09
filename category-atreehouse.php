@@ -2,10 +2,9 @@
 // arguments
 $category_types = array(
   'type'                     => 'post',
-  'child_of'                 => 12,
-  'parent'                   => '',
+  'child_of'                 => 18,
   'orderby'                  => 'slug',
-  'order'                    => 'ASC',
+  'order'                    => 'DESC',
   'hide_empty'               => 1,
   'hierarchical'             => 1,
   'exclude'                  => '',
@@ -17,9 +16,9 @@ $category_types = array(
 ); ?>
 <div class="experience-select-box">
 <select name="event-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> 
- <option value=""><?php echo esc_attr(__('Taku Experiences')); ?></option> 
+ <option value="/accommodations"><?php echo esc_attr(__('Accommodations')); ?></option> 
  <?php 
-  $categories = get_categories($category_types); 
+  $categories = get_categories($category_types);
   foreach ($categories as $category) {
     $option = '<option value="/category/'.$category->category_nicename.'">';
   $option .= $category->cat_name;
@@ -31,24 +30,28 @@ $category_types = array(
 </div>
 
 
-  <section id="experience_portals">
+  <section id="accommodations">
   <?php 
 
   // args
   $args = array(
     'numberposts' => -1,
-    'category_name' => 'a-experiences',
-    'orderby'       => 'rand'
+    'category_name' => 'atreehouse',
+    'order'       => 'ASC'
   );
 
   // query
   $the_query = new WP_Query( $args );
 
   if( $the_query->have_posts()) :
-    while( $the_query->have_posts()) : $the_query->the_post(); ?>
-     
-      <?php get_template_part('templates/experiences'); ?>
-
+    while( $the_query->have_posts()) : $the_query->the_post(); ?>     
+    
+    <div class="container"> 
+      <?php
+        get_template_part('templates/accommodations');
+      ?>    
+    </div>
+    
     <?php endwhile;
   endif;
   ?>

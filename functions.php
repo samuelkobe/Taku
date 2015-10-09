@@ -41,7 +41,13 @@ if (function_exists('acf_add_options_page')) {
     'menu_title'  => 'Taku Settings',
     'menu_slug'   => 'theme-general-settings',
     'capability'  => 'edit_posts',
-    'redirect'    => false
+    // 'redirect'    => false
+  ));
+
+  acf_add_options_sub_page(array(
+    'page_title'  => 'Theme Footer Settings',
+    'menu_title'  => 'Static Banners',
+    'parent_slug' => 'theme-general-settings',
   ));
   
   acf_add_options_sub_page(array(
@@ -49,10 +55,5 @@ if (function_exists('acf_add_options_page')) {
     'menu_title'  => 'Book Now Button',
     'parent_slug' => 'theme-general-settings',
   ));
-  
-  acf_add_options_sub_page(array(
-    'page_title'  => 'Theme Footer Settings',
-    'menu_title'  => 'Static Banners',
-    'parent_slug' => 'theme-general-settings',
-  ));
+
 }

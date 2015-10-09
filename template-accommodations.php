@@ -6,13 +6,13 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
-<!-- 	<?php 
+	<?php 
 	// arguments
 	$category_types = array(
 		'type'                     => 'post',
 		'child_of'                 => 18,
 		'orderby'                  => 'slug',
-		'order'                    => 'ASC',
+		'order'                    => 'DESC',
 		'hide_empty'               => 1,
 		'hierarchical'             => 1,
 		'exclude'                  => '',
@@ -24,7 +24,7 @@
 	); ?>
 	<div class="experience-select-box">
 	<select name="event-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> 
-	 <option value=""><?php echo esc_attr(__('Accommodations')); ?></option> 
+	 <option value="accommodations"><?php echo esc_attr(__('Accommodations')); ?></option> 
 	 <?php 
 	  $categories = get_categories($category_types); 
 	  foreach ($categories as $category) {
@@ -35,7 +35,7 @@
 	  }
 	 ?>
 	</select>
-	</div> -->
+	</div>
 
 
 	  <section id="accommodations">
@@ -45,7 +45,7 @@
 	  $args = array(
 	  	'numberposts'	=> -1,
 	  	'category_name' => 'accommodation',
-	  	'orderby'       => 'rand'
+	  	'order'       => 'ASC'
 	  );
 
 	  // query
@@ -53,11 +53,13 @@
 
 	  if( $the_query->have_posts()) :
 	  	while( $the_query->have_posts()) : $the_query->the_post(); ?>  		
-				
-			<?php
-			  get_template_part('templates/accommodations');
-			?>		
-
+			
+			<div class="container">	
+				<?php
+				  get_template_part('templates/accommodations');
+				?>		
+			</div>
+			
 	  	<?php endwhile;
 	  endif;
 	  ?>

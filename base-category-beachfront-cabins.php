@@ -18,19 +18,14 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div id="half-banner-page-banner" style="background-image: url(<?php the_field('half_banner_page_banner'); ?>)">
-      <h1 class="half_banner_content_title"><?php the_field('half_banner_content_title'); ?></h1>
+    <div id="full-banner-page-banner" style="background-image: url(<?php the_field('cabins_accommodation_page_banner_image', 'options'); ?>)">
+      <h1 id="banner-title"><?php the_title(); ?></h1>
     </div>
-    <div class="wrap container" role="document">
-      <div class="content row">
-        <main class="half-banner-page" role="main">
+    <div class="wrap" role="document">
+      <div class="content">
+        <main class="" role="main">
           <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-          <!-- <?php if (Config\display_sidebar()) : ?>
-            <aside class="sidebar" role="complementary">
-              <?php include Wrapper\sidebar_path(); ?>
-            </aside>
-          <?php endif; ?> -->
+        </main><!-- /.main --> 
       </div><!-- /.content -->
     </div><!-- /.wrap -->
     <?php
