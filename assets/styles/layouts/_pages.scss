@@ -215,3 +215,47 @@ div.ccf-form-wrapper.form-id-223 {
 	width: 100%;
 	height: auto
 }
+
+
+//ACCOMMODATION GALLERY 
+.accommodation_gallery_wrap {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	.accommodation_gallery_object {
+		width: 10%;
+		padding: 16px;
+		display: -webkit-flex;
+		display: flex;
+	}
+}
+
+//PRICING STYLES
+.accommodation_pricing {
+	h2 {
+		margin-top: -32px;
+	}
+	width: 100%;
+	table.pricing {
+		background-color: #ececec;
+		text-align: left;
+		width: 100%;
+		font-size: 100%;
+		margin-bottom: 32px;
+		td.pricing_titles {
+			background-color: #dbdbdb;
+			width: 33.33%;
+			font-size: 120%;
+			padding: 16px;
+		}
+		td {
+			padding: 8px 16px;
+		}
+	}
+}

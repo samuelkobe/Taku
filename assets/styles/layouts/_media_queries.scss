@@ -943,6 +943,17 @@
 		padding: 12px;
 	}
 
+	//ACCOMMODATION GALLERY 
+	.accommodation_gallery_wrap {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.accommodation_gallery_object {
+			width: 50%;
+			padding: 16px;
+		}
+	}
+
 }
 
 
