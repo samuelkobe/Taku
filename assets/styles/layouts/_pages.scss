@@ -216,6 +216,7 @@ div.ccf-form-wrapper.form-id-223 {
 	height: auto
 }
 
+// ------- ACCOMMODATIONS ------- // 
 
 //ACCOMMODATION GALLERY 
 .accommodation_gallery_wrap {
@@ -236,10 +237,60 @@ div.ccf-form-wrapper.form-id-223 {
 	}
 }
 
+//Buttons
+
+.accomm-button {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+
+	width: 100%;
+	a.button-link {
+		width: 49%;
+		text-align: center;
+		color: #fff;
+		background-color: #E3912C; 
+		border: 1px solid #EEA955;
+		padding: 4px 0px;
+		margin-left: 16px;
+		letter-spacing: 1px;
+		-webkit-transition: all 500ms;
+		transition: all 500ms;
+		&.none {
+			margin-left: 0;
+			margin-top: 16px;
+		}
+		&:hover {
+			border-color: #ececec;
+			background-color: #303338;
+			text-decoration: none;
+		}
+		&:focus, :active {
+			outline: none;
+			text-decoration: none;
+		}
+	}
+	a.button-link.button-link-more {
+		width: 100%;
+	}
+}
+
 //PRICING STYLES
 .accommodation_pricing {
+	font-size: 16px;
 	h2 {
 		margin-top: -32px;
+	}
+	div.accomm-information p {
+		font-size: 90%;
+	}
+	.subtitle_price {
+		font-size: 140%;
 	}
 	width: 100%;
 	table.pricing {
@@ -251,11 +302,17 @@ div.ccf-form-wrapper.form-id-223 {
 		td.pricing_titles {
 			background-color: #dbdbdb;
 			width: 33.33%;
-			font-size: 120%;
+			font-size: 140%;
 			padding: 16px;
 		}
 		td {
 			padding: 8px 16px;
 		}
+		span.smaller-text {
+			font-size: 70%;
+		}
+	}
+	table.pricing.full_table tr.break_price_title {
+		border-top: 1px solid #ccc;
 	}
 }

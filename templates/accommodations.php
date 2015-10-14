@@ -14,7 +14,14 @@
 				<img src="<?php the_field('accommodations_image_block_03'); ?>" alt="Taku Resort &amp; Marina" class="half-width-images padding-right order-back" />
 				<div class="padding-left order-forward"><?php the_field('accommodations_content_block_02'); ?></div>
 			</div>
-			<a href="<?php the_field('accommodations_book_now_link'); ?>" target="_blank">Temporary Book Now Link</a>
+			<div class="accomm-button padding-right">
+				<?php 
+					  	$slugout = '<a href="/category/'.$slug = get_post_field( 'post_name', get_post() ).'" class="button-link none">';
+						$slugout .= 'More</a>';
+						echo $slugout;
+				 ?>
+				<!-- <a href="<?php the_field('accommodations_book_now_link'); ?>" class="button-link none">More</a> -->
+			</div>
 		</div>
 	</div>
-</div>
+</div>		

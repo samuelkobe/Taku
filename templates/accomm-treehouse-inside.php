@@ -15,7 +15,9 @@
 			<img src="<?php the_field('accommodations_image_block_02'); ?>" alt="Taku Resort &amp; Marina" />
 			<div class="asymmetrical_inner_content_wrap">
 				<img src="<?php the_field('accommodations_image_block_03'); ?>" alt="Taku Resort &amp; Marina" class="half-width-images" />
-				<a href="<?php the_field('accommodations_book_now_link'); ?>" target="_blank">Temporary Book Now Link</a>
+				<div class="accomm-button padding-left">
+					<a href="<?php the_field('accommodations_book_now_link'); ?>" target="_blank" class="button-link button-link-more">Book Now</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -25,36 +27,26 @@
 		<h2>Pricing</h2>
 			<table class="pricing">
 				<tr>
-					<td class="pricing_titles">Accommodation Type</td>
-					<td class="pricing_titles">Standard Rate</td>
-					<td class="pricing_titles">Peak Rate</td>
+					<td class="pricing_titles"><strong>Accommodation</strong> <br><span class="smaller-text">* extras</span></td>
+					<td class="pricing_titles center"><strong>Standard Rate</strong> <br><span class="smaller-text">Sept 14 - June 12</span></td>
+					<td class="pricing_titles center"><strong>Peak Rate</strong> <br><span class="smaller-text">June 13 - Sept 13</span></td>
 				</tr>
 				<tr>
-					<td><?php the_field('terrace_studio', 'options'); ?></td>
-					<td><?php the_field('terrace_studio_standard_rate', 'options'); ?></td>
-					<td><?php the_field('terrace_studio_peak_rate', 'options'); ?></td>
+					<td><?php the_field('treehouse_suite', 'options'); ?></td>
+					<td class="center"><?php the_field('treehouse_standard_rate', 'options'); ?></td>
+					<td class="center"><?php the_field('treehouse_peak_rate', 'options'); ?></td>
 				</tr>
 				<tr>
-					<td><?php the_field('terrace_one_br', 'options'); ?></td>
-					<td><?php the_field('terrace_one_br_standard_rate', 'options'); ?></td>
-					<td><?php the_field('terrace_one_br_peak_rate', 'options'); ?></td>
-				</tr>
-				<tr>
-					<td><?php the_field('terrace_two_br', 'options'); ?></td>
-					<td><?php the_field('terrace_two_br_standard_rate', 'options'); ?></td>
-					<td><?php the_field('terrace_two_br_peak_rate', 'options'); ?></td>
-				</tr>
-				<tr>
-					<td><?php the_field('terrace_deluxe', 'options'); ?></td>
-					<td><?php the_field('terrace_deluxe_standard_rate', 'options'); ?></td>
-					<td><?php the_field('terrace_deluxe_peak_rate', 'options'); ?></td>
+					<td><?php the_field('extra_person', 'options'); ?></td>
+					<td class="center"><?php the_field('extra_person_rate', 'options'); ?></td>
 				</tr>
 			</table>
+			<div class="accomm-information"><?php the_field('accommodation_infomation_general', 'options'); ?></div>
 		</div>
 	</div>
 
 	<!-- EXTRA INFORMATION FOR ACCOMMODATIONS -->
-	<h2>Gallery:</h2>
+	<h2>Gallery</h2>
 	<div class="asymmetrical_content_wrap">
 		<?php 
 		$images = get_field('accommodation_gallery');

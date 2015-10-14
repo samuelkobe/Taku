@@ -373,6 +373,16 @@
 		}
 	}
 
+	//BUTTONS 
+
+	.accomm-button {
+		a.button-link {
+			width: 100%;
+			margin-top: 16px;
+			margin-left: 0px;
+		}
+	}
+
 	//FORM STUFF
 	.ccf-form-complete {
 		width: 100%;
@@ -643,6 +653,16 @@
 		font-size: 100%;
 		font-weight: lighter;
 		padding: 18px;
+	}
+
+	//BUTTONS 
+
+	.accomm-button {
+		a.button-link {
+			width: 100%;
+			margin-top: 16px;
+			margin-left: 0px;
+		}
 	}
 }
 
@@ -951,6 +971,30 @@
 		.accommodation_gallery_object {
 			width: 50%;
 			padding: 16px;
+		}
+	}
+
+	//BUTTONS 
+
+	.accomm-button {
+		a.button-link {
+			width: 100%;
+			margin-top: 16px;
+			margin-left: 0px;
+		}
+	}
+
+	//PRICING STYLES
+	.accommodation_pricing {
+		h2 {
+		}
+		table.pricing {
+			td.pricing_titles {
+				font-size: 90%;
+			}
+			td {
+				font-size: 80%
+			}
 		}
 	}
 

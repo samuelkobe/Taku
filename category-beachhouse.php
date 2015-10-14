@@ -48,7 +48,7 @@ $category_types = array(
     
     <div class="container"> 
       <?php
-        get_template_part('templates/accommodations');
+        get_template_part('templates/accomm-beachhouse-inside');
       ?>    
     </div>
     
